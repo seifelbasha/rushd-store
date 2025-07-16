@@ -1,2 +1,0 @@
-# rushd-store
-rushd.store
