@@ -1,1 +1,10 @@
-
+services:
+  - type: web
+    name: rushd-store
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: DATABASE_URL
+        sync: false
